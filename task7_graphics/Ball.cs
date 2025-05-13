@@ -43,7 +43,7 @@ namespace task7_graphics
 
         public void Move()
         {
-            position.X = position.Y + speed.X;
+            position.X = position.X + speed.X;
             position.Y = position.Y + speed.Y;
         }
 
@@ -51,12 +51,12 @@ namespace task7_graphics
         {
             if (position.X < 0 || position.X > clientSize.Width)
             {
-                speed.X -= speed.X;
+                speed.X = -speed.X;
             }
 
             if (position.Y < 0 || position.Y > clientSize.Height)
             {
-                speed.Y -= speed.Y;
+                speed.Y = -speed.Y;
             }
         }
     }
