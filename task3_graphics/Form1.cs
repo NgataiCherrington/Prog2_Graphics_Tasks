@@ -37,9 +37,7 @@ namespace task3_graphics
             {
                 graphics.DrawLine(Pens.Black, new Point(0, y), new Point(Width, y));
                 graphics.DrawString(y.ToString(), font, Brushes.Black, 0, y);
-            }
-
-            
+            }           
         }
     }
 }
